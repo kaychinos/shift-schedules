@@ -13,55 +13,85 @@
         
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 0;
             background: white;
             border-radius: 12px;
             overflow: hidden;
-            font-size: 7px;
+            font-size: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         th, td {
-            border: 1px solid black;
-            padding: 1px;
+            border: 1px solid #e2e8f0;
+            padding: 2px;
             text-align: center;
         }
         
         th {
-            background: #f1f1f1;
-            font-size: 8px;
+            background: #ffd407;
+            color: black;
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 4px 2px;
+        }
+
+        /* Section Headers */
+        .section-start td {
+            border-top: 2px solid #94a3b8;
         }
         
         .role {
-            font-weight: bold;
+            font-weight: 600;
             text-align: left;
-            width: 60px;
+            width: 65px;
+            background: #f8fafc;
+            padding-left: 4px;
         }
         
         /* Colors for different people */
-        .igor { background: #bbf7d0; }
-        .tom { background: #dcfce7; }
-        .boris { background: #fef9c3; }
-        .daniel { background: #ffffff; }
-        .guy { background: #fef08a; }
-        .kay { background: #c7d2fe; }
-        .orek { background: #e5e7eb; }
-        .liam { background: #bfdbfe; }
-        .azeem { background: #93c5fd; }
-        .oncall { background: #f3f4f6; }
-        .project { background: #fed7aa; }
-        .p1-manager { background: #fde047; }
+        .igor { background: #bbf7d0; font-weight: 500; }
+        .tom { background: #dcfce7; font-weight: 500; }
+        .boris { background: #fef9c3; font-weight: 500; }
+        .daniel { background: #ffffff; font-weight: 500; }
+        .guy { background: #fef08a; font-weight: 500; }
+        .kay { background: #c7d2fe; font-weight: 500; }
+        .orek { background: #e5e7eb; font-weight: 500; }
+        .liam { background: #bfdbfe; font-weight: 500; }
+        .azeem { background: #93c5fd; font-weight: 500; }
+        .oncall { background: #f8fafc; }
+        .project { background: #fed7aa; font-weight: 500; }
+        .p1-manager { 
+            background: #fde047; 
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
         
         .empty {
-            background: black;
+            background: #1e293b;
             color: white;
         }
         
         .none {
-            background: white;
+            background: #f8fafc;
+            color: #64748b;
+            font-style: italic;
         }
 
         .hebrew {
             direction: rtl;
+            background: #fef08a;
+        }
+
+        /* Special rows */
+        tr:nth-child(even) td.role {
+            background: #f1f5f9;
+        }
+
+        .critical-row td {
+            border-top: 2px solid #e2e8f0;
+            border-bottom: 2px solid #e2e8f0;
         }
     </style>
 </head>
@@ -123,7 +153,7 @@
             </tr>
             
             <!-- UK Shifts -->
-            <tr>
+            <tr class="section-start">
                 <td class="role">UK 10:00-16:00</td>
                 <td class="empty">-</td>
                 <td class="liam">Liam R</td>
@@ -145,7 +175,7 @@
             </tr>
 
             <!-- Project -->
-            <tr>
+            <tr class="section-start">
                 <td class="role">Project</td>
                 <td class="empty">-</td>
                 <td class="project">Boris</td>
@@ -157,7 +187,7 @@
             </tr>
 
             <!-- Oncall -->
-            <tr>
+            <tr class="section-start">
                 <td class="role">Oncall ITOPS</td>
                 <td class="oncall">Yosi M</td>
                 <td class="oncall">Kfir B</td>
@@ -189,7 +219,7 @@
                 <td class="role">Factory/Emb</td>
                 <td class="oncall" colspan="7">Prog: Gabrieal | Emb: Erez L</td>
             </tr>
-            <tr>
+            <tr class="critical-row">
                 <td class="role">P1 Manager</td>
                 <td class="p1-manager" colspan="7">Nimrod Olsha</td>
             </tr>
