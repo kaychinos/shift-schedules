@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 4px;
+            background: #1c1c1e;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            font-size: 7px;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 1px;
+            text-align: center;
+        }
+        
+        th {
+            background: #f1f1f1;
+            font-size: 8px;
+        }
+        
+        .role {
+            font-weight: bold;
+            text-align: left;
+            width: 60px;
+        }
+        
+        /* Colors for different people */
+        .igor { background: #bbf7d0; }
+        .tom { background: #dcfce7; }
+        .boris { background: #fef9c3; }
+        .daniel { background: #ddd6fe; }
+        .guy { background: #fef08a; }
+        .kay { background: #c7d2fe; }
+        .orek { background: #e5e7eb; }
+        .liam { background: #bfdbfe; }
+        .azeem { background: #93c5fd; }
+        .oncall { background: #f3f4f6; }
+        .project { background: #fed7aa; }
+        .p1-manager { background: #fde047; }
+        
+        .empty {
+            background: black;
+            color: white;
+        }
+        
+        .none {
+            background: white;
+        }
+
+        .hebrew {
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="role">Role</th>
+                <th>Sun<br>Dec-15</th>
+                <th>Mon<br>Dec-16</th>
+                <th>Tue<br>Dec-17</th>
+                <th>Wed<br>Dec-18</th>
+                <th>Thu<br>Dec-19</th>
+                <th>Fri<br>Dec-20</th>
+                <th>Sat<br>Dec-21</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- IL Shifts -->
+            <tr>
+                <td class="role">IL 07:00-15:00</td>
+                <td class="igor">Igor</td>
+                <td class="igor">Igor</td>
+                <td class="igor">Igor</td>
+                <td class="igor">Igor</td>
+                <td class="tom">Tom</td>
+                <td class="tom">Tom</td>
+                <td class="boris">Boris</td>
+            </tr>
+            <tr>
+                <td class="role">IL 09:00-18:00</td>
+                <td class="daniel">Daniel</td>
+                <td class="daniel">Daniel</td>
+                <td class="daniel">Daniel</td>
+                <td class="guy">Guy</td>
+                <td class="guy">Guy</td>
+                <td class="guy">Guy</td>
+                <td class="guy">Guy</td>
+            </tr>
+            <tr>
+                <td class="role">IL 15:00-23:00</td>
+                <td class="daniel">Daniel</td>
+                <td class="guy">Guy</td>
+                <td class="kay">Kay</td>
+                <td class="daniel">Daniel</td>
+                <td class="orek">Orek</td>
+                <td class="kay">Kay</td>
+                <td class="kay">Kay</td>
+            </tr>
+            <tr>
+                <td class="role">IL 23:00-07:00</td>
+                <td class="guy">Guy</td>
+                <td class="kay">Kay</td>
+                <td class="orek">Orek</td>
+                <td class="boris">Boris</td>
+                <td class="igor">Igor</td>
+                <td class="daniel">Daniel</td>
+                <td class="tom">Tom</td>
+            </tr>
+            
+            <!-- UK Shifts -->
+            <tr>
+                <td class="role">UK 10:00-16:00</td>
+                <td class="empty">-</td>
+                <td class="liam">Liam R</td>
+                <td class="liam">Liam R</td>
+                <td class="liam">Liam R</td>
+                <td class="liam">Liam R</td>
+                <td class="liam">Liam R</td>
+                <td class="empty">-</td>
+            </tr>
+            <tr>
+                <td class="role">UK 14:00-00:00</td>
+                <td class="empty">-</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
+                <td class="empty">-</td>
+            </tr>
+
+            <!-- Project -->
+            <tr>
+                <td class="role">Project</td>
+                <td class="empty">-</td>
+                <td class="project">Boris</td>
+                <td class="project">Dan,Boris,Tom,Guy</td>
+                <td class="project">Kay</td>
+                <td class="none">None</td>
+                <td class="none">None</td>
+                <td class="none">None</td>
+            </tr>
+
+            <!-- Oncall -->
+            <tr>
+                <td class="role">Oncall ITOPS</td>
+                <td class="oncall">Yosi M</td>
+                <td class="oncall">Kfir B</td>
+                <td class="oncall">Iftah</td>
+                <td class="oncall">Yaniv</td>
+                <td class="oncall">Daniel R</td>
+                <td class="oncall">Iftah</td>
+                <td class="oncall">Kfir</td>
+            </tr>
+            <tr>
+                <td class="role">Oncall IT CORP</td>
+                <td class="oncall">Beni P</td>
+                <td class="oncall">Yossi S</td>
+                <td class="oncall">Vladimir</td>
+                <td class="oncall">David L</td>
+                <td class="oncall">Guy P</td>
+                <td class="oncall">Vladimir</td>
+                <td class="oncall hebrew">יהל</td>
+            </tr>
+            <tr>
+                <td class="role">PAYMENTS</td>
+                <td class="oncall" colspan="7">Assaf Zituni</td>
+            </tr>
+            <tr>
+                <td class="role">CISO/WEB</td>
+                <td class="oncall" colspan="7">CISO: Ben M | WEB: Amit L</td>
+            </tr>
+            <tr>
+                <td class="role">Factory/Emb</td>
+                <td class="oncall" colspan="7">Prog: Gabrieal | Emb: Erez L</td>
+            </tr>
+            <tr>
+                <td class="role">P1 Manager</td>
+                <td class="p1-manager" colspan="7">Nomrod Olsha</td>
+            </tr>
+            <tr>
+                <td class="role">Engine</td>
+                <td class="oncall" colspan="7">Shahar Gang</td>
+            </tr>
+            <tr>
+                <td class="role">Escalation</td>
+                <td class="oncall" colspan="7">Shai G, Orel B, Oren V</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
