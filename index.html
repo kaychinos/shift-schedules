@@ -18,6 +18,7 @@
             border-radius: 12px;
             overflow: hidden;
             font-size: 5px;
+            table-layout: fixed;  /* Added for better column width control */
         }
         
         th, td {
@@ -25,6 +26,13 @@
             padding: 0;
             text-align: center;
             height: 7px;
+            min-width: 65px;  /* base width for all columns */
+        }
+
+        /* Extra width for Saturday column */
+        th:last-child, 
+        td:last-child {
+            min-width: 75px;
         }
         
         th {
@@ -88,7 +96,7 @@
         <thead>
             <tr>
                 <th class="role">Role</th>
-                <th>Sun Jan-5<br>Deploy UF & IL</th>
+                <th>Sun Jan-5<br>Deploy DE & IL</th>
                 <th>Mon Jan-6<br>Deploy US</th>
                 <th>Tue Jan-7</th>
                 <th>Wed Jan-8</th>
@@ -172,7 +180,7 @@
                 <td class="oncall-itops">Iftah Ben Zeev</td>
                 <td class="oncall-itops">Yaniv Gal</td>
                 <td class="oncall-itops">Daniel Reznik</td>
-                <td class="oncall-itops">Daniel</td>
+                <td class="oncall-itops">Daniel Reznik</td>
                 <td class="oncall-itops">Yosi | *Kfir</td>
             </tr>
             <tr>
