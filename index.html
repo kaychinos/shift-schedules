@@ -50,7 +50,7 @@
         /* Colors for different people */
         .igor { background: #bbf7d0; }
         .tom { background: #dcfce7; }
-        .tomer { background: #fed7aa; } /* Added Tomer with orange background */
+        .tomer { background: #fed7aa; }
         .boris { background: #fef9c3; }
         .daniel { background: #ffffff; }
         .guy { background: #fef08a; }
@@ -71,6 +71,7 @@
         .oncall-corp { background: #64748b; color: white; }
         .oncall-billing { background: #475569; color: white; }
         .oncall-ciso { background: #334155; color: white; }
+        .oncall-devops { background: #475569; color: white; }
         
         .empty {
             background: linear-gradient(45deg, #6600ff, #0066ff);
@@ -106,78 +107,78 @@
         <thead>
             <tr>
                 <th class="role">Role</th>
-                <th>Sun Jan-26</th>
-                <th>Mon Jan-27</th>
-                <th>Tue Jan-28</th>
-                <th>Wed Jan-29</th>
-                <th>Thu Jan-30</th>
-                <th>Fri Jan-31</th>
-                <th>Sat Feb-1</th>
+                <th>Sun Feb-2<br>Deploy DE & IL</th>
+                <th>Mon Feb-3<br>Deploy US & AU & JP</th>
+                <th>Tue Feb-4</th>
+                <th>Wed Feb-5</th>
+                <th>Thu Feb-6</th>
+                <th>Fri Feb-7</th>
+                <th>Sat Feb-8</th>
             </tr>
         </thead>
         <tbody>
             <!-- IL Shifts -->
             <tr>
                 <td class="role">IL 07:00-15:00 Morning</td>
-                <td class="guy">Guy</td>
-                <td class="guy">Guy</td>
-                <td class="guy">Guy</td>
                 <td class="tomer">Tomer</td>
+                <td class="igor">Igor</td>
+                <td class="igor">Igor</td>
+                <td class="igor">Igor</td>
+                <td class="kay">Kay</td>
                 <td class="kay">Kay</td>
                 <td class="igor">Igor</td>
-                <td class="ofek">Ofek</td>
             </tr>
             <tr>
                 <td class="role">IL 15:00-23:00 Evening</td>
-                <td class="igor">Igor</td>
-                <td class="tomer">Tomer</td>
-                <td class="tomer">Tomer</td>
+                <td class="guy">Guy</td>
+                <td class="guy">Guy</td>
                 <td class="daniel">Daniel</td>
                 <td class="daniel">Daniel</td>
+                <td class="tomer">Tomer</td>
                 <td class="tomer">Tomer</td>
                 <td class="guy">Guy</td>
             </tr>
             <tr>
                 <td class="role">IL 23:00-07:00 Night</td>
-                <td class="tom">Tom</td>
-                <td class="igor">Igor</td>
-                <td class="kay">Kay</td>
-                <td class="ofek">Ofek</td>
-                <td class="boris">Boris</td>
                 <td class="daniel">Daniel</td>
+                <td class="kay">Kay</td>
+                <td class="guy">Guy</td>
+                <td class="ofek">Ofek</td>
                 <td class="igor">Igor</td>
+                <td class="boris">Boris</td>
+                <td class="tomer">Tomer</td>
             </tr>
             
             <!-- UK Shifts -->
             <tr>
                 <td class="role">UK 10:00-16:00</td>
                 <td class="empty">-</td>
-                <td class="azeem">Azeem</td>
-                <td class="azeem">Azeem</td>
-                <td class="azeem">Azeem</td>
-                <td class="azeem">Azeem</td>
-                <td class="azeem">Azeem</td>
-                <td class="azeem">Azeem</td>
+                <td class="liam">Liam</td>
+                <td class="liam">Liam</td>
+                <td class="liam">Liam</td>
+                <td class="liam">Liam</td>
+                <td class="liam">Liam</td>
+                <td class="empty">-</td>
             </tr>
             <tr>
                 <td class="role">UK 14:00-00:00</td>
                 <td class="empty">-</td>
-                <td class="liam">Liam</td>
-                <td class="liam">Liam</td>
-                <td class="liam">Liam</td>
-                <td class="liam">Liam</td>
-                <td class="liam">Liam</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
+                <td class="azeem">Azeem</td>
                 <td class="empty">-</td>
             </tr>
 
             <!-- Project -->
             <tr>
                 <td class="role">Project</td>
-                <td class="project">Boris (Nir),<span>Kay</span> (NOC), Tomer (WEB), Daniel (PM)</td>
-                <td class="project">Boris (Nir),<span>Kay</span> (NOC)</td>
-                <td class="project">Tom (Rinat), Daniel (PM),Boris (Nir)</td>
-                <td class="project">Tom & Guy (Rinat),<span>Kay</span> (NOC),Boris (Nir)</td>
-                <td class="project">Tom (Rinat)</td>
+                <td class="project">Boris (Nir),<span>Kay</span> (Deploy)</td>
+                <td class="project">Boris (Nir),Daniel (PM)</td>
+                <td class="project">Boris (Nir)</td>
+                <td class="project">Guy (Rinat),Boris (Nir),<span>Kay</span> (NOC)</td>
+                <td class="project">Daniel (PM)</td>
                 <td class="empty">-</td>
                 <td class="empty">-</td>
             </tr>
@@ -190,8 +191,8 @@
                 <td class="oncall-itops">Iftah Ben Zeev</td>
                 <td class="oncall-itops">Yaniv Gal</td>
                 <td class="oncall-itops">Daniel Reznik</td>
-                <td class="oncall-itops">Yaniv</td>
-                <td class="oncall-itops">Iftah | *Yosi</td>
+                <td class="oncall-itops">Yosi</td>
+                <td class="oncall-itops">Yaniv | *Iftah</td>
             </tr>
             <tr>
                 <td class="role">Oncall IT CORP</td>
@@ -200,13 +201,43 @@
                 <td class="oncall-corp">Vladimir Kuzmin</td>
                 <td class="oncall-corp">David Leibovich</td>
                 <td class="oncall-corp">Guy Pechinsky</td>
-                <td class="oncall-corp">David Leibovich</td>
+                <td class="oncall-corp">Guy Pechinsky</td>
                 <td class="p1-manager">החל ממוצ"ש</td>
             </tr>
             <tr>
+                <td class="role">Oncall DEVOPS 09:00 - 18:00</td>
+                <td class="oncall-devops">Viktoria Yakobashvili</td>
+                <td class="oncall-devops">Shani Rooso</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+            </tr>
+            <tr>
+                <td class="role">Oncall DEVOPS 18:00 - 09:00</td>
+                <td class="oncall-devops">Viktoria Yakobashvili</td>
+                <td class="oncall-devops">Shani Rooso</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+                <td class="oncall-devops">TBD</td>
+            </tr>
+            <tr>
+                <td class="role">CISO</td>
+                <td class="oncall-corp">Ben Elbaz</td>
+                <td class="oncall-corp">Ben Elbaz</td>
+                <td class="oncall-corp">Ben Elbaz</td>
+                <td class="oncall-corp">Ben Elbaz</td>
+                <td class="oncall-corp">Ben Elbaz</td>
+                <td class="oncall-corp">Ben Elbaz</td>
+                <td class="oncall-corp">Ben Elbaz</td>
+            </tr>
+            <tr>
                 <td class="role">Oncall Billing</td>
-                <td class="oncall-billing">Leonid Raboy</td>
-                <td class="oncall-billing">Amram Zada</td>
+                <td class="oncall-billing">Ester Rotneberg</td>
+                <td class="oncall-billing">Mirit Lasry</td>
                 <td class="oncall-billing">Amram Zada</td>
                 <td class="oncall-billing">Leonid Raboy</td>
                 <td class="oncall-billing">Ester Rotneberg</td>
@@ -214,18 +245,8 @@
                 <td class="empty">-</td>
             </tr>
             <tr>
-                <td class="role">CISO</td>
-                <td class="oncall-corp">Dan Elbaz</td>
-                <td class="oncall-corp">Dan Elbaz</td>
-                <td class="oncall-corp">Dan Elbaz</td>
-                <td class="oncall-corp">Dan Elbaz</td>
-                <td class="oncall-corp">Dan Elbaz</td>
-                <td class="oncall-corp">Dan Elbaz</td>
-                <td class="oncall-corp">Dan Elbaz</td>
-            </tr>
-            <tr>
                 <td class="role">PAYMENTS</td>
-                <td class="oncall-ciso" colspan="7">Assaf Zituni</td>
+                <td class="oncall-ciso" colspan="7">Ofir Gov , (Rami Stadler - 2.2.25)</td>
             </tr>
             <tr>
                 <td class="role">WEB</td>
@@ -237,7 +258,7 @@
             </tr>
             <tr>
                 <td class="role">P0 Manager</td>
-                <td class="p1-manager" colspan="7">Valery Cherniavsky</td>
+                <td class="p1-manager" colspan="7">Itay Aszodi</td>
             </tr>
             <tr>
                 <td class="role">Engine</td>
