@@ -10,7 +10,7 @@
             background: #1c1c1e;
             font-family: -apple-system, system-ui, BlinkMacSystemFont;
         }
-        
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -20,7 +20,7 @@
             font-size: 5px;
             table-layout: fixed;
         }
-        
+
         th, td {
             border: 1px solid black;
             padding: 0;
@@ -33,46 +33,44 @@
         td:last-child {
             min-width: 75px;
         }
-        
+
         th {
             background: #ffd407;
             color: black;
             font-size: 6px;
             height: 12px;
         }
-        
+
         .role {
             font-weight: bold;
             text-align: center;
             width: 60px;
         }
-        
-        /* Colors for different people */
+
+        /* Color definitions */
         .igor { background: #bbf7d0; }
         .tom { background: #dcfce7; }
         .tomer { background: #fed7aa; }
         .boris { background: #fef9c3; }
         .daniel { background: #ffffff; }
         .guy { background: #fef08a; }
-        .kay { 
-            background: #c7d2fe;
-            color: #ff4400;
-            font-weight: bold;
-        }
+        .kay { background: #c7d2fe; color: #ff4400; font-weight: bold; }
         .ofek { background: #e5e7eb; }
         .liam { background: #bfdbfe; }
         .azeem { background: #93c5fd; }
         .project { background: #fed7aa; }
-        .p1-manager { background: #fde047; }
-        .holiday { background: #ef4444; color: white; }
-        
-        /* Distinct oncall colors */
+        .ran { background: #f87171; }
+        .benny { background: #d8b4fe; }
+        .nir { background: #bbf7f7; }
+
         .oncall-itops { background: #94a3b8; color: white; }
         .oncall-corp { background: #64748b; color: white; }
         .oncall-billing { background: #475569; color: white; }
         .oncall-ciso { background: #334155; color: white; }
         .oncall-devops { background: #475569; color: white; }
-        
+
+        .p1-manager { background: #fde047; }
+
         .empty {
             background: linear-gradient(45deg, #6600ff, #0066ff);
             background-size: 200% 200%;
@@ -86,26 +84,9 @@
             50% {background-position: 100% 50%}
             100% {background-position: 0% 50%}
         }
-        
-        .none {
-            background: white;
-        }
 
-        .hebrew {
-            direction: rtl;
-        }
-
-        /* Highlighting TEXT Kay's name in project sections */
-        .kay-text {
-            color: #ff4400;
-            font-weight: bold;
-            background: transparent;
-        }
-        /* Highlighting Kay's name in project sections */
-        .project span {
-            color: #ff4400;
-            font-weight: bold;
-        }
+        .none { background: white; }
+        .hebrew { direction: rtl; }
     </style>
 </head>
 <body>
@@ -113,163 +94,110 @@
         <thead>
             <tr>
                 <th class="role">Role</th>
-                <th>Sun Apr-13</th>
-                <th>Mon Apr-14</th>
-                <th>Tue Apr-15</th>
-                <th>Wed Apr-16</th>
-                <th>Thu Apr-17</th>
-                <th>Fri Apr-18</th>
-                <th>Sat Apr-19</th>
+                <th>Sun Apr-20</th>
+                <th>Mon Apr-21</th>
+                <th>Tue Apr-22</th>
+                <th>Wed Apr-23</th>
+                <th>Thu Apr-24</th>
+                <th>Fri Apr-25</th>
+                <th>Sat Apr-26</th>
             </tr>
         </thead>
         <tbody>
             <!-- IL Shifts -->
             <tr>
                 <td class="role">IL 07:00-15:00 Morning</td>
-                <td class="boris">Boris</td> <!-- Sunday -->
-                <td class="kay">Kay | Ran</td> <!-- Monday -->
-                <td class="daniel">Daniel | Benny</td> <!-- Tuesday -->
-                <td class="boris">Boris | Benny</td> <!-- Wednesday -->
-                <td class="igor">Igor | Benny</td> <!-- Thursday -->
-                <td class="tomer">Tomer</td> <!-- Friday -->
-                <td class="kay">Kay</td> <!-- Saturday -->
-            </tr>
-            <!-- Evening Shifts -->
-            <tr>
-                <td class="role">IL 15:00-23:00 Evening</td>
-                <td class="guy">Guy</td> <!-- Sunday -->
-                <td class="igor">Igor | Nir</td> <!-- Monday -->
-                <td class="kay">Kay | Nir</td> <!-- Tuesday -->
-                <td class="daniel">Daniel | Ran</td> <!-- Wednesday -->
-                <td class="tomer">Tomer | Nir</td> <!-- Thursday -->
-                <td class="ofek">Ofek</td> <!-- Friday -->
-                <td class="igor">Igor</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">IL 23:00-07:00 Night</td>
-                <td class="igor">Igor</td> <!-- Sunday -->
-                <td class="guy">Guy</td> <!-- Monday -->
+                <td class="benny">Benny</td> <!-- Sunday -->
+                <td class="igor">Igor</td> <!-- Monday -->
                 <td class="tomer">Tomer</td> <!-- Tuesday -->
+                <td class="ran">Ran</td> <!-- Wednesday -->
+                <td class="ran">Ran</td> <!-- Thursday -->
+                <td class="daniel">Daniel</td> <!-- Friday -->
+                <td class="tomer">Tomer</td> <!-- Saturday -->
+            </tr>
+            <tr>
+                <td class="role">IL Shift 09:00-17:00 Reinforcement</td>
+                <td class="kay">Kay</td> <!-- Sunday -->
+                <td class="guy">Guy</td> <!-- Monday -->
+                <td class="guy">Guy</td> <!-- Tuesday -->
                 <td class="ofek">Ofek</td> <!-- Wednesday -->
-                <td class="kay">Kay</td> <!-- Thursday -->
-                <td class="boris">Boris</td> <!-- Friday -->
+                <td class="boris">Boris</td> <!-- Thursday -->
+                <td class="none"></td> <!-- Friday -->
+                <td class="none"></td> <!-- Saturday -->
+            </tr>
+            <tr>
+                <td class="role">IL Shift 15:00-23:00 Evening</td>
+                <td class="ran">Ran</td> <!-- Sunday -->
+                <td class="nir">Nir</td> <!-- Monday -->
+                <td class="nir">Nir</td> <!-- Tuesday -->
+                <td class="nir">Nir</td> <!-- Wednesday -->
+                <td class="igor">Igor</td> <!-- Thursday -->
+                <td class="igor">Igor</td> <!-- Friday -->
                 <td class="daniel">Daniel</td> <!-- Saturday -->
             </tr>
-            
+            <tr>
+                <td class="role">IL Shift 23:00-07:00 Night</td>
+                <td class="ofek">Ofek</td> <!-- Sunday -->
+                <td class="daniel">Daniel</td> <!-- Monday -->
+                <td class="kay">Kay</td> <!-- Tuesday -->
+                <td class="guy">Guy</td> <!-- Wednesday -->
+                <td class="tomer">Tomer</td> <!-- Thursday -->
+                <td class="boris">Boris</td> <!-- Friday -->
+                <td class="igor">Igor</td> <!-- Saturday -->
+            </tr>
+
+            <!-- Projects -->
+            <tr>
+                <td class="role">Projects</td>
+                <td class="tomer">Tomer</td> <!-- Sunday -->
+                <td class="igor">Igor</td> <!-- Monday -->
+                <td class="kay">Kay</td> <!-- Tuesday -->
+                <td class="kay">Kay</td> <!-- Wednesday -->
+                <td class="guy">Guy</td> <!-- Thursday -->
+                <td class="empty">-</td> <!-- Friday -->
+                <td class="empty">-</td> <!-- Saturday -->
+            </tr>
+            <tr>
+                <td class="role"></td>
+                <td class="guy">Guy</td> <!-- Sunday -->
+                <td class="daniel">Daniel</td> <!-- Monday -->
+                <td class="daniel">Daniel</td> <!-- Tuesday -->
+                <td class="daniel">Daniel</td> <!-- Wednesday -->
+                <td class="nir">Nir</td> <!-- Thursday -->
+                <td class="empty">-</td> <!-- Friday -->
+                <td class="empty">-</td> <!-- Saturday -->
+            </tr>
+            <tr>
+                <td class="role"></td>
+                <td class="nir">Nir</td> <!-- Sunday -->
+                <td class="boris">Boris</td> <!-- Monday -->
+                <td class="boris">Boris</td> <!-- Tuesday -->
+                <td class="boris">Boris</td> <!-- Wednesday -->
+                <td class="empty">-</td> <!-- Thursday -->
+                <td class="empty">-</td> <!-- Friday -->
+                <td class="empty">-</td> <!-- Saturday -->
+            </tr>
+
             <!-- UK Shifts -->
             <tr>
                 <td class="role">UK 10:00-18:00</td>
                 <td class="empty">-</td> <!-- Sunday -->
-                <td class="liam">Liam Richards</td> <!-- Monday -->
-                <td class="liam">Liam Richards</td> <!-- Tuesday -->
-                <td class="liam">Liam Richards</td> <!-- Wednesday -->
-                <td class="liam">Liam Richards</td> <!-- Thursday -->
+                <td class="liam">Liam</td> <!-- Monday -->
+                <td class="liam">Liam</td> <!-- Tuesday -->
+                <td class="liam">Liam</td> <!-- Wednesday -->
+                <td class="liam">Liam</td> <!-- Thursday -->
                 <td class="empty">-</td> <!-- Friday -->
                 <td class="empty">-</td> <!-- Saturday -->
             </tr>
             <tr>
                 <td class="role">UK 16:00-00:00</td>
                 <td class="empty">-</td> <!-- Sunday -->
-                <td class="azeem">Azeem Khan</td> <!-- Monday -->
-                <td class="azeem">Azeem Khan</td> <!-- Tuesday -->
-                <td class="azeem">Azeem Khan</td> <!-- Wednesday -->
-                <td class="azeem">Azeem Khan</td> <!-- Thursday -->
+                <td class="azeem">Azeem</td> <!-- Monday -->
+                <td class="azeem">Azeem</td> <!-- Tuesday -->
+                <td class="azeem">Azeem</td> <!-- Wednesday -->
+                <td class="azeem">Azeem</td> <!-- Thursday -->
                 <td class="empty">-</td> <!-- Friday -->
                 <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-
-            <!-- Project -->
-            <tr>
-                <td class="role">Project</td>
-                <td class="empty">-</td> <!-- Sunday -->
-                <td class="project">Tomer | Daniel | Benny</td> <!-- Monday -->
-                <td class="project">Boris | Ran</td> <!-- Tuesday -->
-                <td class="project">Guy | Nir</td> <!-- Wednesday -->
-                <td class="project">Guy</td> <!-- Thursday -->
-                <td class="empty">-</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-
-            <!-- Oncall -->
-            <tr>
-                <td class="role">Oncall ITOPS</td>
-                <td class="oncall-itops">Yosi Maimon</td> <!-- Sunday -->
-                <td class="oncall-itops">Kfir Brandsdorfer</td> <!-- Monday -->
-                <td class="oncall-itops">Iftah Ben Zeev</td> <!-- Tuesday -->
-                <td class="oncall-itops">Yaniv Gal</td> <!-- Wednesday -->
-                <td class="oncall-itops">Daniel Reznik</td> <!-- Thursday -->
-                <td class="oncall-itops">Daniel Reznik</td> <!-- Friday -->
-                <td class="oncall-itops">Iftah | *Kfir</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">Oncall IT CORP</td>
-                <td class="oncall-corp">Beni Puntch</td> <!-- Sunday -->
-                <td class="oncall-corp">Yossi Schwartz</td> <!-- Monday -->
-                <td class="oncall-corp">Vladimir Kuzmin</td> <!-- Tuesday -->
-                <td class="oncall-corp">David Leibovich</td> <!-- Wednesday -->
-                <td class="oncall-corp">Guy Pechinsky</td> <!-- Thursday -->
-                <td class="oncall-corp">Vladimir Kuzmin</td> <!-- Friday -->
-                <td class="p1-manager">החל ממוצ"ש</td>
-            </tr>
-            <tr>
-                <td class="role">Oncall DEVOPS 09:00 - 18:00</td>
-                <td class="oncall-devops">Arshak</td> <!-- Sunday -->
-                <td class="oncall-devops">Andrey</td> <!-- Monday -->
-                <td class="oncall-devops">Rotem Vaknin</td> <!-- Tuesday -->
-                <td class="oncall-devops">Viktoria Yakobashvili</td> <!-- Wednesday -->
-                <td class="oncall-devops">Rotem Vaknin</td> <!-- Thursday -->
-                <td class="oncall-devops">Saba</td> <!-- Friday -->
-                <td class="oncall-devops">Saba</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">Oncall DEVOPS 18:00 - 09:00</td>
-                <td class="oncall-devops">Arshak</td> <!-- Sunday -->
-                <td class="oncall-devops">Andrey</td> <!-- Monday -->
-                <td class="oncall-devops">Rotem Vaknin</td> <!-- Tuesday -->
-                <td class="oncall-devops">Viktoria Yakobashvili</td> <!-- Wednesday -->
-                <td class="oncall-devops">Rotem Vaknin</td> <!-- Thursday -->
-                <td class="oncall-devops">Saba</td> <!-- Friday -->
-                <td class="oncall-devops">Saba</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">CISO</td>
-                <td class="oncall-corp">Alex Dobkin</td> <!-- Sunday -->
-                <td class="oncall-corp">Alex Dobkin</td> <!-- Monday -->
-                <td class="oncall-corp">Alex Dobkin</td> <!-- Tuesday -->
-                <td class="oncall-corp">Alex Dobkin</td> <!-- Wednesday -->
-                <td class="oncall-corp">Alex Dobkin</td> <!-- Thursday -->
-                <td class="oncall-corp">Alex Dobkin</td> <!-- Friday -->
-                <td class="oncall-corp">Alex Dobkin</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">Oncall Billing</td>
-                <td class="oncall-billing">Ester Rotneberg</td> <!-- Sunday -->
-                <td class="oncall-billing">Leonid Raboy</td> <!-- Monday -->
-                <td class="oncall-billing">Amram Zada</td> <!-- Tuesday -->
-                <td class="oncall-billing">Leonid Raboy</td> <!-- Wednesday -->
-                <td class="oncall-billing">Amram Zada</td> <!-- Thursday -->
-                <td class="empty">-</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">PAYMENTS</td>
-                <td class="oncall-ciso" colspan="7">Assaf Zituni</td>
-            </tr>
-            <tr>
-                <td class="role">WEB & Engine</td>
-                <td class="oncall-ciso" colspan="7">Shahar Gang</td>
-            </tr>
-            <tr>
-                <td class="role">Factory/Emb</td>
-                <td class="oncall-ciso" colspan="7">Prog: Gabriel Ben Moshe | Emb: Erez Lasman</td>
-            </tr>
-            <tr>
-                <td class="role">P0 Manager</td>
-                <td class="p1-manager" colspan="7">Oren Viner</td>
-            </tr>
-            <tr>
-                <td class="role">Escalation</td>
-                <td class="oncall-ciso" colspan="7">Shai Galili, Orel Biton, Oren Viner</td>
             </tr>
         </tbody>
     </table>
