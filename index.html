@@ -3,103 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC Shift Schedule - Week of 5/18/2025</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #1c1c1e;
-            font-family: -apple-system, system-ui, BlinkMacSystemFont;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            font-size: 5px;
-            table-layout: fixed;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 0;
-            text-align: center;
-            height: 7px;
-            min-width: 65px;
-        }
-
-        th:last-child, 
-        td:last-child {
-            min-width: 75px;
-        }
-
-        th {
-            background: #ffd407;
-            color: black;
-            font-size: 6px;
-            height: 12px;
-        }
-
-        .role {
-            font-weight: bold;
-            text-align: center;
-            width: 60px;
-        }
-
-        /* Colors for different people */
-        .igor { background: #4ea731; }
-        .tom { background: #dcfce7; }
-        .tomer { background: #f1a982; }
-        .boris { background: #ffc000; }
-        .daniel { background: #ffffff; }
-        .guy { background: #ffff00; }
-        .kay { background: #c7d2fe; color: #ff4400; font-weight: bold; }
-        .ofek { background: #e5e7eb; }
-        .liam { background: #bfdbfe; }
-        .azeem { background: #93c5fd; }
-        .project { background: #fed7aa; }
-        .p1-manager { background: #fde047; }
-        .holiday { background: #ef4444; color: white; }
-        .benny { background: #d8b4fe; }
-        .ran { background: #f87171; }
-        .nir { background: #bbf7f7; }
-
-        /* Distinct oncall colors */
-        .oncall-itops { background: #94a3b8; color: white; }
-        .oncall-corp { background: #64748b; color: white; }
-        .oncall-billing { background: #475569; color: white; }
-        .oncall-ciso { background: #334155; color: white; }
-        .oncall-devops { background: #475569; color: white; }
-
-        .empty {
-            background: linear-gradient(45deg, #6600ff, #0066ff);
-            background-size: 200% 200%;
-            animation: shine 3s ease infinite;
-            color: white;
-            box-shadow: inset 0 0 10px rgba(255,255,255,0.3);
-        }
-
-        @keyframes shine {
-            0% {background-position: 0% 50%}
-            50% {background-position: 100% 50%}
-            100% {background-position: 0% 50%}
-        }
-
-        .hebrew {
-            direction: rtl;
-        }
-
-        .kay-text {
-            color: #ff4400;
-            font-weight: bold;
-            background: transparent;
-        }
-
-        .project span {
-            color: #ff4400;
-            font-weight: bold;
-        }
+        
+    body { margin: 0; padding: 0; background: #1c1c1e; font-family: -apple-system, system-ui, BlinkMacSystemFont; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; font-size: 5px; table-layout: fixed; }
+    th, td { border: 1px solid black; padding: 0; text-align: center; height: 7px; min-width: 65px; }
+    th:last-child, td:last-child { min-width: 75px; }
+    th { background: #ffd407; color: black; font-size: 6px; height: 12px; }
+    .role { font-weight: bold; text-align: center; width: 60px; color: black; background-color: white; }
+    .igor { background: #4ea731; color: black; } .tom { background: #dcfce7; color: black; } .tomer { background: #f1a982; color: black; }
+    .boris { background: #ffc000; color: black; } .daniel { background: #ffffff; color: black; } .guy { background: #ffff00; color: black; }
+    .kay { background: #c7d2fe; color: #ff4400; font-weight: bold; } .ofek { background: #e5e7eb; color: black; }
+    .liam { background: #bfdbfe; color: black; } .azeem { background: #93c5fd; color: black; } .project { background: #fed7aa; }
+    .p1-manager { background: #fde047; color: black; } .holiday { background: #ef4444; color: white; }
+    .benny { background: #d8b4fe; color: black; } .ran { background: #f87171; color: black; } .nir { background: #bbf7f7; color: black; }
+    .oncall-itops { background: #94a3b8; color: white; } .oncall-corp { background: #64748b; color: white; }
+    .oncall-billing { background: #475569; color: white; } .oncall-ciso { background: #334155; color: white; }
+    .oncall-devops { background: #475569; color: white; }
+    .empty { background: linear-gradient(45deg, #6600ff, #0066ff); background-size: 200% 200%; animation: shine 3s ease infinite; color: white; box-shadow: inset 0 0 10px rgba(255,255,255,0.3); }
+    @keyframes shine { 0% {background-position: 0% 50%} 50% {background-position: 100% 50%} 100% {background-position: 0% 50%} }
+    .hebrew { direction: rtl; } .kay-text { color: #ff4400; font-weight: bold; background: transparent; }
+    .project span { color: #ff4400; font-weight: bold; }
+    /* Ensure table class name matches the one in style block for generated HTML */
+    table th, table td { border: 1px solid black; padding: 0; text-align: center; height: 7px; min-width: 65px; }
+    table th { font-size: 6px; height: 12px; }
+  
     </style>
 </head>
 <body>
@@ -107,216 +36,12 @@
         <thead>
             <tr>
                 <th class="role">Role</th>
-                <th>Sun May-18</th>
-                <th>Mon May-19</th>
-                <th>Tue May-20</th>
-                <th>Wed May-21</th>
-                <th>Thu May-22</th>
-                <th>Fri May-23</th>
-                <th>Sat May-24</th>
+                <th>Sun May-18</th><th>Mon May-19</th><th>Tue May-20</th><th>Wed May-21</th><th>Thu May-22</th><th>Fri May-23</th><th>Sat May-24</th>
             </tr>
         </thead>
         <tbody>
-            <!-- IL Shifts -->
-            <tr>
-                <td class="role">IL 07:00-15:00 Morning</td>
-                <td class="ran">Ran</td> <!-- Sunday -->
-                <td class="benny">Benny</td> <!-- Monday -->
-                <td class="benny">Benny</td> <!-- Tuesday -->
-                <td class="benny">Benny</td> <!-- Wednesday -->
-                <td class="benny">Benny</td> <!-- Thursday -->
-                <td class="ran">Ran</td> <!-- Friday -->
-                <td class="tomer">Tomer</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">IL Shift 09:00-17:00 Reinforcement</td>
-                <td class="guy">Guy</td> <!-- Sunday -->
-                <td class="boris">Boris</td> <!-- Monday -->
-                <td class="igor">Igor</td> <!-- Tuesday -->
-                <td class="ofek">Ofek</td> <!-- Wednesday -->
-                <td class="tomer">Tomer</td> <!-- Thursday -->
-                <td class="empty">-</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">IL Shift 15:00-23:00 Evening</td>
-                <td class="daniel">Daniel</td> <!-- Sunday -->
-                <td class="ran">Ran</td> <!-- Monday -->
-                <td class="nir">Nir</td> <!-- Tuesday -->
-                <td class="daniel">Daniel</td> <!-- Wednesday -->
-                <td class="nir">Nir</td> <!-- Thursday -->
-                <td class="benny">Benny</td> <!-- Friday -->
-                <td class="igor">Igor</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">IL Shift 23:00-07:00 Night</td>
-                <td class="ofek">Ofek</td> <!-- Sunday -->
-                <td class="guy">Guy</td> <!-- Monday -->
-                <td class="tomer">Tomer</td> <!-- Tuesday -->
-                <td class="kay">Kay</td> <!-- Wednesday -->
-                <td class="igor">Igor</td> <!-- Thursday -->
-                <td class="boris">Boris</td> <!-- Friday -->
-                <td class="kay">Kay</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">Oncall NOC</td>
-                <td class="daniel">Daniel</td> <!-- Sunday -->
-                <td class="kay">Kay</td> <!-- Monday -->
-                <td class="kay">Kay</td> <!-- Tuesday -->
-                <td class="empty">-</td> <!-- Wednesday -->
-                <td class="boris">Boris</td> <!-- Thursday -->
-                <td class="boris">Boris</td> <!-- Friday -->
-                <td class="daniel">Daniel</td> <!-- Saturday -->
-            </tr>
-
-            <!-- Projects -->
-            <tr>
-                <td class="role" rowspan="4">Projects</td>
-                <td class="tomer">Tomer</td> <!-- Sunday -->
-               <td class="tomer">Tomer</td> <!-- Monday -->
-                <td class="guy">Guy</td> <!-- Tuesday -->
-                <td class="guy">Guy</td> <!-- Wednesday -->
-                <td class="guy">Guy</td> <!-- Thursday -->
-                <td class="empty">-</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="igor">Igor</td> <!-- Sunday -->
-                <td class="daniel">Daniel</td> <!-- Monday -->
-                <td class="daniel">Daniel</td> <!-- Tuesday -->
-                <td class="nir">Nir</td> <!-- Wednesday -->
-                <td class="daniel">Daniel</td> <!-- Thursday -->
-                <td class="empty">-</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="kay">Kay</td> <!-- Sunday -->
-                <td class="nir">Nir</td> <!-- Monday -->
-                <td class="boris">Boris</td> <!-- Tuesday -->
-                <td class="boris">Boris</td> <!-- Wednesday -->
-                <td class="boris">Boris</td> <!-- Thursday -->
-                <td class="empty">-</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="empty">-</td> <!-- Sunday -->
-                <td class="kay">Kay</td> <!-- Monday -->
-                <td class="kay">Kay</td> <!-- Tuesday -->
-                <td class="igor">Igor</td> <!-- Wednesday -->
-                <td class="empty">-</td> <!-- Thursday -->
-                <td class="empty">-</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-
-            <!-- UK Shifts -->
-            <tr>
-                <td class="role">UK 10:00-18:00 (IL TIME)</td>
-                <td class="empty">-</td> <!-- Sunday -->
-                <td class="azeem">Azeem</td> <!-- Monday -->
-                <td class="azeem">Azeem</td> <!-- Tuesday -->
-                <td class="azeem">Azeem</td> <!-- Wednesday -->
-                <td class="azeem">Azeem</td> <!-- Thursday -->
-                <td class="azeem">Azeem</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">UK 16:00-00:00 (IL TIME)</td>
-                <td class="empty">-</td> <!-- Sunday -->
-               <td class="liam">Liam</td> <!-- Monday -->
-                <td class="liam">Liam</td> <!-- Tuesday -->
-                <td class="liam">Liam</td> <!-- Wednesday -->
-                <td class="liam">Liam</td> <!-- Thursday -->
-                <td class="liam">Liam</td> <!-- Friday -->
-                <td class="empty">-</td> <!-- Saturday -->
-            </tr>
-
-            <!-- Oncall -->
-            <tr>
-                <td class="role">Oncall ITops</td>
-                <td class="oncall-itops">Yosi Maimon</td> <!-- Sunday -->
-                <td class="oncall-itops">Kfir Brandsdorfer</td> <!-- Monday -->
-                <td class="oncall-itops">Iftah Ben Zeev</td> <!-- Tuesday -->
-                <td class="oncall-itops">Yaniv Gal</td> <!-- Wednesday -->
-                <td class="oncall-itops">Daniel Reznik</td> <!-- Thursday -->
-                <td class="oncall-itops">Slava Yuhymchuk</td> <!-- Friday -->
-                <td class="oncall-itops">Yosi | Kfir</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">Oncall ITcorp</td>
-                <td class="oncall-corp">Beni Puntch</td>
-                <td class="oncall-corp">Yossi Schwartz</td>
-                <td class="oncall-corp">Vladimir Kuzmin</td>
-                <td class="oncall-corp">David Leibovich</td>
-                <td class="oncall-corp">Guy Pechinsky</td>
-                <td class="oncall-corp">Yossi Schwartz</td>
-                <td class="oncall-corp">-</td>
-            </tr>
-            <tr>
-                <td class="role">Oncall Devops 09:00 - 18:00</td>
-                <td class="oncall-devops">Shani</td>
-                <td class="oncall-devops">Viktoria</td>
-                <td class="oncall-devops">Shani</td>
-                <td class="oncall-devops">Saba</td>
-                <td class="oncall-devops">Kursad</td>
-                <td class="oncall-devops">Arshak</td>
-                <td class="oncall-devops">Arshak</td>
-            </tr>
-            <tr>
-                <td class="role">Oncall Devops 18:00 - 09:00</td>
-                <td class="oncall-devops">Shani</td>
-                <td class="oncall-devops">Viktoria</td>
-                <td class="oncall-devops">Shani</td>
-                <td class="oncall-devops">Saba</td>
-                <td class="oncall-devops">Kursad</td>
-                <td class="oncall-devops">Arshak</td>
-                <td class="oncall-devops">Arshak</td>
-            </tr>
-            <tr>
-                <td class="role">Oncall Info-security</td>
-                <td class="oncall-ciso" colspan="7">Ben Mitzner</td>
-            </tr>
-            <tr>
-                <td class="role">Oncall Billing</td>
-                <td class="oncall-billing">Ester Rotnberg</td>
-                <td class="oncall-billing">Leonid Raboy</td>
-                <td class="oncall-billing">Amram Zada</td>
-                <td class="oncall-billing">Leonid Raboy</td>
-                <td class="oncall-billing">Amram Zada</td>
-                <td class="empty">-</td>
-                <td class="empty">-</td>
-            </tr>
-            <tr>
-                <td class="role">Oncall Payments</td>
-                <td class="oncall-ciso" colspan="7">Rami Stadler</td>
-            </tr>
-            <tr>
-                <td class="role">Oncall Backend</td>
-                <td class="oncall-ciso">Adi Ohana</td> <!-- Sunday -->
-                <td class="oncall-ciso">Avi Rubin</td> <!-- Monday -->
-                <td class="oncall-ciso">Adi Ohana</td> <!-- Tuesday -->
-                <td class="oncall-ciso">Felix Singerman</td> <!-- Wednesday -->
-                <td class="oncall-ciso">Adi Ohana</td> <!-- Thursday -->
-                <td class="oncall-ciso">Felix Singerman</td> <!-- Friday -->
-                <td class="oncall-ciso">Felix Singerman</td> <!-- Saturday -->
-            </tr>
-            <tr>
-                <td class="role">Oncall Programmer (Factory)</td>
-                <td class="oncall-ciso" colspan="7">Gabriel Ben Moshe</td>
-            </tr>
-            <tr>
-                <td class="role">Embedded and boot oncall</td>
-                <td class="oncall-ciso" colspan="7">Erez Lasman</td>
-            </tr>
-            <tr>
-                <td class="role">P0 Manager</td>
-                <td class="p1-manager" colspan="7">Igal Ahronovich</td>
-            </tr>
-            <tr>
-                <td class="role">Escalation engine + urgent cases</td>
-                <td class="oncall-ciso" colspan="7">Shai Galili, Orel Biton, Oren Viner</td>
-            </tr>
+            <tr><td class="role">IL 07:00-15:00 Morning</td><td class="guy">Guy</td><td class="guy">Guy</td><td class="guy">Guy</td><td class="guy">Guy</td><td class="guy">Guy</td><td class="guy">Guy</td><td class="guy">Guy</td></tr><tr><td class="role">IL Shift 09:00-17:00 Reinforcement</td><td class="benny">Benny</td><td class="boris">Boris</td><td class="igor">Igor</td><td class="ofek">Ofek</td><td class="tomer">Tomer</td><td class="empty">-</td><td class="empty">-</td></tr><tr><td class="role">IL Shift 15:00-23:00 Evening</td><td class="daniel">Daniel</td><td class="ran">Ran</td><td class="nir">Nir</td><td class="daniel">Daniel</td><td class="nir">Nir</td><td class="benny">Benny</td><td class="igor">Igor</td></tr><tr><td class="role">IL Shift 23:00-07:00 Night</td><td class="ofek">Ofek</td><td class="guy">Guy</td><td class="tomer">Tomer</td><td class="kay">Kay</td><td class="igor">Igor</td><td class="boris">Boris</td><td class="kay">Kay</td></tr><tr><td class="role">Oncall NOC</td><td class="daniel">Daniel</td><td class="kay">Kay</td><td class="kay">Kay</td><td class="empty">-</td><td class="boris">Boris</td><td class="boris">Boris</td><td class="daniel">Daniel</td></tr><tr><td class="role" rowspan="4">Projects</td><td class="tomer">Tomer</td><td class="tomer">Tomer</td><td class="guy">Guy</td><td class="guy">Guy</td><td class="guy">Guy</td><td class="empty">-</td><td class="empty">-</td></tr><tr><td class="igor">Igor</td><td class="daniel">Daniel</td><td class="daniel">Daniel</td><td class="nir">Nir</td><td class="daniel">Daniel</td><td class="empty">-</td><td class="empty">-</td></tr><tr><td class="kay">Kay</td><td class="nir">Nir</td><td class="boris">Boris</td><td class="boris">Boris</td><td class="boris">Boris</td><td class="empty">-</td><td class="empty">-</td></tr><tr><td class="empty">-</td><td class="kay">Kay</td><td class="kay">Kay</td><td class="igor">Igor</td><td class="empty">-</td><td class="empty">-</td><td class="empty">-</td></tr><tr><td class="role">UK 10:00-18:00 (IL TIME)</td><td class="empty">-</td><td class="azeem">Azeem</td><td class="azeem">Azeem</td><td class="azeem">Azeem</td><td class="azeem">Azeem</td><td class="azeem">Azeem</td><td class="empty">-</td></tr><tr><td class="role">UK 16:00-00:00 (IL TIME)</td><td class="empty">-</td><td class="liam">Liam</td><td class="liam">Liam</td><td class="liam">Liam</td><td class="liam">Liam</td><td class="liam">Liam</td><td class="empty">-</td></tr><tr><td class="role">Oncall ITops</td><td class="oncall-itops">Yosi Maimon</td><td class="oncall-itops">Kfir Brandsdorfer</td><td class="oncall-itops">Iftah Ben Zeev</td><td class="oncall-itops">Yaniv Gal</td><td class="oncall-itops">Daniel Reznik</td><td class="oncall-itops">Slava Yuhymchuk</td><td class="oncall-itops">Yosi | Kfir</td></tr><tr><td class="role">Oncall ITcorp</td><td class="oncall-corp">Beni Puntch</td><td class="oncall-corp">Yossi Schwartz</td><td class="oncall-corp">Vladimir Kuzmin</td><td class="oncall-corp">David Leibovich</td><td class="oncall-corp">Guy Pechinsky</td><td class="oncall-corp">Yossi Schwartz</td><td class="empty">-</td></tr><tr><td class="role">Oncall Devops 09:00 - 18:00</td><td class="oncall-devops">Shani</td><td class="oncall-devops">Viktoria</td><td class="oncall-devops">Shani</td><td class="oncall-devops">Saba</td><td class="oncall-devops">Kursad</td><td class="oncall-devops">Arshak</td><td class="oncall-devops">Arshak</td></tr><tr><td class="role">Oncall Devops 18:00 - 09:00</td><td class="oncall-devops">Shani</td><td class="oncall-devops">Viktoria</td><td class="oncall-devops">Shani</td><td class="oncall-devops">Saba</td><td class="oncall-devops">Kursad</td><td class="oncall-devops">Arshak</td><td class="oncall-devops">Arshak</td></tr><tr><td class="role">Oncall Info-security</td><td class="oncall-ciso" colspan="7">Ben Mitzner</td></tr><tr><td class="role">Oncall Billing</td><td class="oncall-billing">Ester Rotnberg</td><td class="oncall-billing">Leonid Raboy</td><td class="oncall-billing">Amram Zada</td><td class="oncall-billing">Leonid Raboy</td><td class="oncall-billing">Amram Zada</td><td class="empty">-</td><td class="empty">-</td></tr><tr><td class="role">Oncall Payments</td><td class="oncall-ciso" colspan="7">Rami Stadler</td></tr><tr><td class="role">Oncall Backend</td><td class="oncall-ciso">Adi Ohana</td><td class="oncall-ciso">Avi Rubin</td><td class="oncall-ciso">Adi Ohana</td><td class="oncall-ciso">Felix Singerman</td><td class="oncall-ciso">Adi Ohana</td><td class="oncall-ciso">Felix Singerman</td><td class="oncall-ciso">Felix Singerman</td></tr><tr><td class="role">Oncall Programmer (Factory)</td><td class="oncall-ciso" colspan="7">Gabriel Ben Moshe</td></tr><tr><td class="role">Embedded and boot oncall</td><td class="oncall-ciso" colspan="7">Erez Lasman</td></tr><tr><td class="role">P0 Manager</td><td class="p1-manager" colspan="7">Igal Ahronovich</td></tr><tr><td class="role">Escalation engine + urgent cases</td><td class="oncall-ciso" colspan="7">Shai Galili, Orel Biton, Oren Viner</td></tr>
         </tbody>
     </table>
 </body>
 </html>
-
